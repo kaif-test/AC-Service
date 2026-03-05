@@ -83,6 +83,7 @@ function LeadForm({ compact = false }) {
       if (window.fbq) window.fbq('track', 'Lead')
       // Fire GA4 event
       if (window.gtag) window.gtag('event', 'generate_lead', { event_category: 'form' })
+      fbq('track', 'Lead');
     }, 900)
   }
 
